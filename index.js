@@ -1,15 +1,28 @@
 import React  from 'react'
 import ReactDom from 'react-dom'
-function Greeting(){
+function Books(){
   return ( 
   <section> 
-  <Person/>
-  <Message/>
+  <Book/>
+ 
   </section>
   );
 }
+const Book =() =>{
+  return (
+  <article>
+     <CoverImage/>
+    <Title/>  
+    <Authour/>
+  </article> 
 
-const Person = () => <h1>Pirathi</h1>;
-const Message = () => <h1>Laxshana</h1>;
+  );
+};
 
-ReactDom.render(<Greeting/>,document.getElementById('root'));
+const CoverImage = () => 
+  <img src =" https://images-na.ssl-images-amazon.com/images/I/81-%2B-WTltXL._AC_UL200_SR200,200_.jpg" alt="Child book"/>
+  const Title =()=> <h1>Chid story book</h1>
+  const Authour =()=> <p>by Pirathi !</p>
+
+
+ReactDom.render(<Books/>,document.getElementById('root'));
