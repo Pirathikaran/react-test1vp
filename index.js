@@ -1,8 +1,9 @@
 import React  from 'react'
 import ReactDom from 'react-dom'
+import './index.css';
 function Books(){
   return ( 
-  <section> 
+  <section className="books"> 
   <Book/>
     <Book/>
       <Book/>
@@ -16,7 +17,7 @@ function Books(){
 }
 const Book =() =>{
   return (
-  <article>
+  <article className="book">
      <CoverImage/>
     <Title/>  
     <Authour/>
@@ -27,7 +28,7 @@ const Book =() =>{
 
 const CoverImage = () => 
   <img 
-  width="250"
+  width="200"
   src =" https://images-na.ssl-images-amazon.com/images/I/81-%2B-WTltXL._AC_UL200_SR200,200_.jpg" alt="Child book"/>
   const Title =()=> <h1>Chid story book</h1>
   const Authour =()=> <p>by Pirathi !</p>

@@ -1,0 +1,19 @@
+body{
+  background: red
+}
+.book{
+  box-sizing: border-box;
+  padding:20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: white;
+
+}
+@media screen and (min-width :768px){
+  .books{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 2px;
+  }
+}
